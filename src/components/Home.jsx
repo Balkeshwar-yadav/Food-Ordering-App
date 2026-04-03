@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../assets/logo.png'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
@@ -18,10 +19,10 @@ const Home = () => {
 
                         <div className="navigation">
                             <div className="flex items-center gap-7 justify-center font-bold flex-start cursor-pointer ">
-                                <a href="/home" className="text-red-600">Home</a>
-                                <a href="/foods" className="hover:text-red-600">Foods</a>
-                                <a href="/cart" className="hover:text-red-600">Cart</a>
-                                <a href="/contact" className="hover:text-red-600">Contact</a>
+                                       <Link to='/' className="text-red-600">Home</Link>
+                                        <Link to='/foods' className="text-gray-600">Foods</Link>
+                                        <Link to='/cart' className="text-gray-600">Cart</Link>
+                                        <Link to='/contact' className="text-gray-600">Contact</Link>
                             </div>
                         </div>
                         <div className="flex items-center gap-8">
